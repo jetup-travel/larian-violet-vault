@@ -1,6 +1,5 @@
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { LarianLogo } from "./LarianLogo";
 
 interface ProductDetailsProps {
   productName: string;
@@ -23,45 +22,32 @@ export const ProductDetails = ({
   };
 
   return (
-    <div className="h-full bg-larian-gradient flex flex-col justify-center items-center text-white p-8">
+    <div className="h-full bg-blue-600 flex flex-col text-white p-8 relative">
       {/* Header with back button and logo */}
-      <div className="absolute top-6 left-6 right-6 flex items-center justify-between">
+      <div className="flex items-center gap-3 mb-8">
         <Button 
           variant="ghost" 
           size="sm" 
           onClick={onBack}
-          className="text-white hover:bg-white/20 border border-white/30"
+          className="text-white hover:bg-white/10 p-2 h-8 w-8 rounded-full"
         >
-          <ArrowLeft className="h-4 w-4 mr-1" />
-          <LarianLogo size="sm" className="text-white" />
-          <span className="ml-2 text-xs bg-white/20 px-2 py-1 rounded-full">TEST MODE</span>
+          <ArrowLeft className="h-4 w-4" />
         </Button>
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+            <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
+          </div>
+          <span className="font-medium text-white">Larian</span>
+          <span className="text-xs bg-orange-500 text-white px-2 py-1 rounded-full font-medium">TEST MODE</span>
+        </div>
       </div>
 
-      {/* Product info */}
-      <div className="text-center space-y-4 max-w-md mx-auto">
+      {/* Product info - positioned more to the top */}
+      <div className="mt-16">
         <div className="space-y-2">
-          <h1 className="text-lg font-medium text-white/90">{productName}</h1>
-          <div className="text-5xl font-bold text-white">
+          <h1 className="text-base font-normal text-white/90">{productName}</h1>
+          <div className="text-6xl font-bold text-white">
             {formatPrice(price)}
-          </div>
-        </div>
-        
-        {/* Product description */}
-        <div className="text-white/80 text-sm mt-6 space-y-2">
-          <p>Pagamento único e seguro processado pela Larian Pay</p>
-          <p>Tecnologia Stripe para máxima segurança</p>
-        </div>
-
-        {/* Security badges */}
-        <div className="flex items-center justify-center gap-4 mt-8 text-xs text-white/60">
-          <div className="flex items-center gap-1">
-            <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-            <span>SSL Seguro</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-            <span>PCI Compliant</span>
           </div>
         </div>
       </div>
