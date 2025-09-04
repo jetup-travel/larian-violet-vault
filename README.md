@@ -1,64 +1,40 @@
-# Welcome to your Lovable project
+# Larian Pay - Plataforma de Pagamentos
 
-## Project info
+Uma plataforma de pagamentos moderna inspirada no design da Stripe, construída especificamente para a Larian Pay. Interface elegante em tons de roxo com integração completa da API do Stripe.
 
-**URL**: https://lovable.dev/projects/bfbb6636-f5a6-430a-9ee2-a5d682148675
+## ✨ Características
 
-## How can I edit this code?
+- **Design Moderno**: Interface inspirada na Stripe com tons de roxo personalizados
+- **Integração Stripe**: Sistema completo de pagamentos com cartão de crédito  
+- **Responsivo**: Funciona perfeitamente em desktop e mobile
+- **Seguro**: Certificação PCI DSS e criptografia de ponta
+- **Processamento Instantâneo**: Transações em tempo real
 
-There are several ways of editing your application.
+## 🚀 Tecnologias
 
-**Use Lovable**
+- React 18 com TypeScript
+- Tailwind CSS + Design System customizado
+- Stripe Checkout Integration
+- Supabase Edge Functions
+- Vite para bundling
+- shadcn/ui para componentes
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bfbb6636-f5a6-430a-9ee2-a5d682148675) and start prompting.
+## 📱 Páginas Implementadas
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Landing Page**: Apresentação da plataforma
+- **Checkout**: Formulário de pagamento completo
+- **Sucesso**: Confirmação de pagamento aprovado  
+- **Cancelamento**: Página para pagamentos cancelados
 
-**Use your preferred IDE**
+## 🔧 Setup da Integração Stripe
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Consulte o arquivo `README-STRIPE-INTEGRATION.md` para instruções detalhadas sobre como configurar sua chave do Stripe e testar a integração.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Cartões de Teste
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Visa**: 4242 4242 4242 4242
+- **Mastercard**: 5555 5555 5555 4444
+- **Declined**: 4000 0000 0000 0002
 
 ## How can I deploy this project?
 

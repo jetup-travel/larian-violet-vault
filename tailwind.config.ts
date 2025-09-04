@@ -61,7 +61,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom Larian Pay colors
+				'larian-purple': 'hsl(var(--larian-purple))',
+				'larian-purple-light': 'hsl(var(--larian-purple-light))',
+				'larian-purple-dark': 'hsl(var(--larian-purple-dark))'
+			},
+			backgroundImage: {
+				'larian-gradient': 'var(--larian-gradient)',
+				'larian-gradient-dark': 'var(--larian-gradient-dark)'
+			},
+			boxShadow: {
+				'purple': 'var(--shadow-purple)',
+				'purple-lg': 'var(--shadow-purple-lg)',
+				'glow-purple': 'var(--glow-purple)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
