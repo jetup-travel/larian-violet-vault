@@ -22,10 +22,7 @@ const PaymentCanceled = () => {
           </div>
         </CardHeader>
         
-        <CardContent className="text-center py-8">
-          <p className="text-muted-foreground">
-            Nenhuma cobrança foi efetuada em seu cartão. Se você teve algum problema durante o pagamento, entre em contato conosco.
-          </p>
+        <CardContent className="py-8">
         </CardContent>
       </Card>
     </div>

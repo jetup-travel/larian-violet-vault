@@ -22,10 +22,7 @@ const PaymentSuccess = () => {
           </div>
         </CardHeader>
         
-        <CardContent className="text-center py-8">
-          <p className="text-muted-foreground">
-            Um email de confirmação foi enviado para você com os detalhes da transação.
-          </p>
+        <CardContent className="py-8">
         </CardContent>
       </Card>
     </div>
