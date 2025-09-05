@@ -1,11 +1,8 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { LarianLogo } from "@/components/LarianLogo";
-import { XCircle, ArrowLeft, RotateCcw } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { XCircle } from "lucide-react";
 
 const PaymentCanceled = () => {
-  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
@@ -25,35 +22,9 @@ const PaymentCanceled = () => {
           </div>
         </CardHeader>
         
-        <CardContent className="space-y-6">
-          <div className="bg-red-50 p-4 rounded-lg text-center">
-            <p className="text-sm text-red-800">
-              Nenhuma cobrança foi efetuada em seu cartão. 
-              Você pode tentar novamente quando desejar.
-            </p>
-          </div>
-
-          <div className="space-y-3">
-            <Button 
-              onClick={() => navigate("/checkout")}
-              className="w-full bg-larian-gradient hover:bg-larian-gradient-dark text-white"
-            >
-              <RotateCcw className="h-4 w-4 mr-2" />
-              Tentar novamente
-            </Button>
-            
-            <Button 
-              variant="outline"
-              onClick={() => navigate("/")}
-              className="w-full"
-            >
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Voltar ao início
-            </Button>
-          </div>
-
-          <p className="text-xs text-muted-foreground text-center">
-            Se você teve algum problema durante o pagamento, entre em contato conosco.
+        <CardContent className="text-center py-8">
+          <p className="text-muted-foreground">
+            Nenhuma cobrança foi efetuada em seu cartão. Se você teve algum problema durante o pagamento, entre em contato conosco.
           </p>
         </CardContent>
       </Card>

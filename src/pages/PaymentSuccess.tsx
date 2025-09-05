@@ -1,11 +1,8 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { LarianLogo } from "@/components/LarianLogo";
-import { CheckCircle, ArrowLeft, Download } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { CheckCircle } from "lucide-react";
 
 const PaymentSuccess = () => {
-  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
@@ -25,42 +22,8 @@ const PaymentSuccess = () => {
           </div>
         </CardHeader>
         
-        <CardContent className="space-y-6">
-          <div className="bg-green-50 p-4 rounded-lg space-y-2">
-            <div className="flex justify-between items-center">
-              <span className="text-sm text-muted-foreground">Valor pago</span>
-              <span className="font-semibold">R$ 50,00</span>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="text-sm text-muted-foreground">Método</span>
-              <span className="text-sm">Cartão de crédito</span>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="text-sm text-muted-foreground">ID da transação</span>
-              <span className="text-sm font-mono">#LRP_123456789</span>
-            </div>
-          </div>
-
-          <div className="space-y-3">
-            <Button 
-              variant="outline" 
-              className="w-full"
-              onClick={() => window.print()}
-            >
-              <Download className="h-4 w-4 mr-2" />
-              Baixar comprovante
-            </Button>
-            
-            <Button 
-              onClick={() => navigate("/")}
-              className="w-full bg-larian-gradient hover:bg-larian-gradient-dark text-white"
-            >
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Voltar ao início
-            </Button>
-          </div>
-
-          <p className="text-xs text-muted-foreground text-center">
+        <CardContent className="text-center py-8">
+          <p className="text-muted-foreground">
             Um email de confirmação foi enviado para você com os detalhes da transação.
           </p>
         </CardContent>
